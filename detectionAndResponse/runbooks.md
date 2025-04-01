@@ -26,7 +26,7 @@ Steps to address compromised instances:
 3) Identify whether the source was authorized to make those API calls
 4) Secure your S3 bucket, recommended settings:
 
-- S3 Block Public Access Settings, S3 Bucket Policies and User Policies, VPC Endpoints for S3, S3 Presigned URLs, S3 Access Points, S3 ACLs
+    - S3 Block Public Access Settings, S3 Bucket Policies and User Policies, VPC Endpoints for S3, S3 Presigned URLs, S3 Access Points, S3 ACLs
 
 ---
 
