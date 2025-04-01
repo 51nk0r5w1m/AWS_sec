@@ -98,3 +98,14 @@ or
 
 ---
 
+## Exposed EC2 Key Pairs
+
+1) Remove all of the public keys in `~/.ssh/authorized_keys` file on EC2 instances
+2) Create a new Key Pair and add its public key to the `~/.ssh/authorized_keys` file on all EC2 instances
+
+**NOTE**:
+    - Use SSM Run Command to automate the process of adding/deleting public keys on EC2 instances
+    - Key Pairs don't get deleted from EC2 instance's root volumes when the Key Pair is removed from teh EC2 Console
+    - When launching an EC2 instance with a prebuilt AMI, the old Key Pair will exist alongside the new Key Pair
+
+---
